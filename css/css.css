@@ -1,0 +1,110 @@
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* skrifttype */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  /* skriftstørrelse */
+  font-size: 1rem;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+h1 {
+  color: rgb(252, 253, 254);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: rgb(8, 59, 246);
+}
+
+p {
+  color: rgb(14, 25, 243);
+}
+
+/* Billeder i 100% */
+img {
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+}
+
+#topNav {
+  background-color:rgb(4, 127, 24);
+  color: #fff;
+}
+
+#topNav a {
+color:rgb(255, 255, 255);
+}
+
+#topNav a:hover {
+  color: rgb(10, 232, 248);
+}
+
+/* hero sektionen styles */
+header {
+height: 100vh;
+background-color: rgb(251, 252, 251);
+
+/* herobillede i baggrunden */
+background-image: url('../images/cucumber.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+
+/* Læg tekstent i midten vertikalt og horisontalt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+/* RESPONSIVT DESIGN */
+
+/* Mobile enheder */
+@media (max-width: 600px){
+  body {
+    background-color: rgb(217, 219, 193);
+  }
+  #stemning {
+    display:block;
+  }
+}
+
+/* Tablets, iPads, mm. */
+@media (min-width: 601px) and (max-width: 1024px){
+  body {
+    background-color: rgb(220, 188, 242);
+  }
+  #stemning {
+    display:block;
+  }
+}
